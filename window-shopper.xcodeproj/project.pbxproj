@@ -14,6 +14,8 @@
 		1C836CD8202CDE8C00E2BB3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C836CD6202CDE8C00E2BB3B /* LaunchScreen.storyboard */; };
 		1C836CE4202CEC2600E2BB3B /* CurrencyTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C836CE3202CEC2600E2BB3B /* CurrencyTxtField.swift */; };
 		1C836CEC202E3EEE00E2BB3B /* window_shopperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C836CEB202E3EEE00E2BB3B /* window_shopperTests.swift */; };
+		1C836CF42031E60400E2BB3B /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C836CF32031E60400E2BB3B /* Wage.swift */; };
+		1C836CF52031E78D00E2BB3B /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C836CF32031E60400E2BB3B /* Wage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,7 @@
 		1C836CE9202E3EED00E2BB3B /* window-shopperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "window-shopperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C836CEB202E3EEE00E2BB3B /* window_shopperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = window_shopperTests.swift; sourceTree = "<group>"; };
 		1C836CED202E3EEE00E2BB3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C836CF32031E60400E2BB3B /* Wage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,7 @@
 		1C836CE1202CE0D500E2BB3B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1C836CF32031E60400E2BB3B /* Wage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -227,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C836CE4202CEC2600E2BB3B /* CurrencyTxtField.swift in Sources */,
+				1C836CF42031E60400E2BB3B /* Wage.swift in Sources */,
 				1C836CD0202CDE8C00E2BB3B /* MainVC.swift in Sources */,
 				1C836CCE202CDE8C00E2BB3B /* AppDelegate.swift in Sources */,
 			);
@@ -237,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C836CEC202E3EEE00E2BB3B /* window_shopperTests.swift in Sources */,
+				1C836CF52031E78D00E2BB3B /* Wage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
