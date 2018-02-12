@@ -10,6 +10,10 @@ import UIKit
 
 @IBDesignable
 class CurrencyTxtField: UITextField {
+    
+    override func draw(_ rect: CGRect) {
+        <#code#>
+    }
 
     override func prepareForInterfaceBuilder() {
         customizeView()

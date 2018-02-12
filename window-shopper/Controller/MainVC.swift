@@ -12,6 +12,12 @@ class MainVC: UIViewController {
 
     @IBOutlet weak var wageTxt: CurrencyTxtField!
     @IBOutlet weak var priceTxt: CurrencyTxtField!
+    @IBOutlet weak var resultLbl: UILabel!
+    @IBOutlet weak var hoursLbl: UILabel!
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,12 +30,34 @@ class MainVC: UIViewController {
         
         wageTxt.inputAccessoryView = calcBtn
         priceTxt.inputAccessoryView = calcBtn
+        
+        resultLbl.isHidden = true
+        hoursLbl.isHidden = true
     }
-
+    
     @objc func calculate() {
-        print("We got here")
+        if let wageTxt = wageTxt.text, let priceTxt = priceTxt.text { // this is a completely different variable than above, but it's func scoped
+            if let wage = Double(wageTxt), let price = Double(priceTxt) { // take text and convert into a number
+                view.endEditing(true)
+                resultLbl.isHidden = false
+                hoursLbl.isHidden = false
+                resultLbl.text = "\(Wage.getHours(forWage: wage, andPrice: price))"
+            }
+        }
     }
 
 
+    @IBAction func clearCalculatorPressed(_ sender: Any) {
+        // when clear button is pressed
+        // hide pre-populated labels
+        // text fields become empty
+        
+        resultLbl.isHidden = true
+        hoursLbl.isHidden = true
+        wageTxt.text = ""
+        priceTxt.text = ""
+    }
+    
+    
 }
 
